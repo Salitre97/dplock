@@ -1,0 +1,8 @@
+{
+  "name": "dplock",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "856aad81"
+}
