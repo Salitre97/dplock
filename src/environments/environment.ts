@@ -1,9 +1,21 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+import { dotenv } from 'dotenv';
+
+dotenv.config();
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: process.env['API_KEY'],
+    authDomain: "dplock-178f1.firebaseapp.com",
+    projectId: "dplock-178f1",
+    storageBucket: "dplock-178f1.appspot.com",
+    messagingSenderId: "341253713262",
+    appId: "1:341253713262:web:20d1122cb1c1b49ed3a57f",
+    measurementId: "G-CCKX0HPL0K"
+  }
 };
 
 /*
