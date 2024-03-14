@@ -1,48 +1,113 @@
-.input{
-    font-size: 300;
-}
-ion-item{
-    --background: #f1f1f1;
-    border-radius: 10px;
-    margin-bottom: 16px;
-}
-.header{
-    margin-top: 100px;
-    margin-bottom: 80px;
-    text-align: center;
-    .subTitle{
-        color: gray;
-        font-size: 0.9rem;
-    }
-    title{
-        font-size: 2rem;
-    }
-}
-.signupLink{
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    align-content: center;
-    position: absolute;
-    justify-content: center;
-    left: 0;
-    bottom: 0;
-    width: 80%;
-    right: 0;
+.login-content {
+  --background: #ffffff; /* Assuming a dark theme from your image */
+  color: #fff;
 
-    p{
-        font-size: 0.9rem;
+  .login-header {
+    text-align: center;
+    margin-bottom: 2em;
+
+    h1 {
+      font-size: 2.5em; /* Larger font size for the app name */
+      margin-bottom: 0.5em;
     }
-    a{
+
+    p {
+      font-size: 1em;
+      opacity: 0.9; /* Slightly lower opacity for the subtitle */
+    }
+  }
+  .signup-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    font-size: 1rem; /* Adjust size as needed */
+  }
+  .sign-up-text {
+    font-size: 1rem; /* Adjust size as needed */
+    color: inherit; /* This makes the text use the current color, or you can set a specific one */
+    text-decoration: none; /* Removes underline */
+    /* Additional styling for hover state if needed */
+    &:hover {
+      text-decoration: none; /* Ensures no underline appears on hover */
+      color: inherit; /* Keep the color consistent on hover, or choose a hover color */
+    }
+  }
+
+  .login-form {
+    .login-input {
+      --background: #e4e4e4; /* Slightly lighter than the page background */
+      --border-radius: 10px;
+      --border-color: #1e1e1e;
+      --padding-start: 16px; /* Some padding inside the input */
+      --color: #000000; /* Text color inside the input */
+      --placeholder-color: #575757; /* Placeholder color */
+      
+      ion-label {
+        --color: #fff;
+      }
+    }
+
+    .login-button {
+      --background: #fff; /* White button */
+      --background-activated: #e5e5e5; /* Light grey for activated state */
+      --color: #000; /* Black text */
+      margin-top: 1em;
+      margin-bottom: 1em;
+      border-radius: 10px;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-bottom: 2em;
+      
+      a {
+        color: #4a90e2; /* A bright color for links */
+        font-size: 0.9em;
         text-decoration: none;
+      }
     }
-}
-.forgotPassword{
-    display: flex;
-    justify-content: flex-end;
-    a{
-        font-weight: 400;
-        font-size: 0.8rem;
-        text-decoration: none;
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 2em;
+
+      &:before,
+      &:after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #333;
+      }
+
+      span {
+        margin: 0 8px;
+        color: #fff;
+        font-size: 0.9em;
+      }
     }
+
+    .social-login-button {
+      margin-bottom: 1em;
+      border-radius: 10px;
+
+      &.apple {
+        --background: #fff; /* White button */
+        --color: #000; /* Black text */
+      }
+
+      &.google {
+        --background: #4285F4; /* Google blue */
+        --color: #fff; /* White text */
+      }
+    }
+
+    .login-footer {
+      font-size: 0.75em;
+      text-align: center;
+      opacity: 0.6;
+      margin-top: 2em;
+    }
+  }
 }

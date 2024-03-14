@@ -1,32 +1,57 @@
+<ion-content class="ion-padding login-content">
 
-<ion-content [fullscreen]="true">
-  <div class="header">
-    <ion-title class="title">Welcome Back</ion-title>
-    <p class="subTitle">Sign in to access your account</p>
+  <!-- Sign Up Link at the top right corner -->
+  <div class="signup-link">
+    <a href="/signup" class="sign-up-text">Sign Up</a>
   </div>
 
-  <form>
-    <div class="ion-padding">
-      <ion-item>
-        <ion-input placeholder="username" class="input"></ion-input>
-        <ion-icon name="person-outline"></ion-icon>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="password" class="input"></ion-input>
-        <ion-icon name="lock-closed-outline"></ion-icon>
-      </ion-item>
+  <!-- Login Header -->
+  <div class="login-header">
+    <h1>DP</h1>
+    <p>Login to your account.</p>
+  </div>
 
-      <div class="forgotpassword">
-        <a [routerLink]="['/reset-password']"> Forgot password? </a>
-      </div>
-      <div>
-        <p> New member?<a [routerLink]="['/signup']">Signup now</a></p>
-      </div>
+  <!-- Login Form -->
+  <form class="login-form">
+    <!-- Email Input -->
+    <ion-item class="login-input">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" required></ion-input>
+    </ion-item>
+
+    <!-- Password Input -->
+    <ion-item class="login-input">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Sign In Button -->
+    <ion-button expand="block" class="login-button">Sign in</ion-button>
+
+    <!-- Forgot Password Link -->
+    <div class="forgot-password">
+      <a href="/forgot-password">Forgot password?</a>
     </div>
-    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom:30px">
-      <ion-fab-button [routerLink]="['home']">
-        <ion-icon name="chevron-forward"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+
+    <!-- Divider -->
+    <div class="divider">
+      <span>or</span>
+    </div>
+
+    <!-- Social Login Buttons -->
+    <ion-button expand="block" color="dark" class="social-login-button apple">
+      <ion-icon slot="start" name="logo-apple"></ion-icon>
+      Sign in with Apple
+    </ion-button>
+    
+    <ion-button expand="block" class="social-login-button google">
+      <ion-icon slot="start" name="logo-google"></ion-icon>
+      Sign in with Google
+    </ion-button>
+
+    <!-- Footer -->
+    <div class="login-footer">
+      <p>&copy; 2024 DP Containers.</p>
+    </div>
   </form>
 </ion-content>

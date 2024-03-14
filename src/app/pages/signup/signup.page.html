@@ -1,33 +1,50 @@
+<ion-content class="ion-padding login-content">
 
-<ion-content [fullscreen]="true">
-  <div class="header">
-    <ion-title class="title">Welcome</ion-title>
-    <p class="subTitle">Sign Up to create your account</p>
+  <!-- Sign In Link at the top right corner -->
+  <div class="signin-link">
+    <a href="/login" class="sign-in-text">Sign In</a>
   </div>
 
-  <form>
-    <div class="ion-padding">
-      <ion-item>
-        <ion-input placeholder="name" class="input"></ion-input>
-        <ion-icon name="person-outline"></ion-icon>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="email" class="input"></ion-input>
-        <ion-icon name="person-outline"></ion-icon>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="password" class="input"></ion-input>
-        <ion-icon name="lock-closed-outline"></ion-icon>
-      </ion-item>
+  <!-- Sign Up Header -->
+  <div class="login-header">
+    <h1>DP</h1>
+    <p>Sign up for a new account.</p>
+  </div>
 
-      <div class="sininLink">
-        <p> Already a member?<a [routerLink]="['/login']">Sign in now</a></p>
-      </div>
+  <!-- Sign Up Form -->
+  <form class="login-form">
+    <!-- Name Input -->
+    <ion-item class="login-input">
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <!-- Email Input -->
+    <ion-item class="login-input">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" required></ion-input>
+    </ion-item>
+
+    <!-- Password Input -->
+    <ion-item class="login-input">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Sign Up Button -->
+    <ion-button expand="block" class="login-button">Sign Up</ion-button>
+
+    <!-- Terms and Conditions Link -->
+    <div class="terms-conditions">
+      <a href="/terms">Terms & Conditions</a>
     </div>
-    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom:30px">
-      <ion-fab-button [routerLink]="['home']">
-        <ion-icon name="chevron-forward"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+
+    <!-- Social Sign Up Buttons -->
+    <!-- Add any social sign-up buttons if needed -->
+
+    <!-- Footer -->
+    <div class="login-footer">
+      <p>&copy; 2024 DP Containers.</p>
+    </div>
   </form>
 </ion-content>

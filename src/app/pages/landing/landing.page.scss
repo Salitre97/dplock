@@ -1,5 +1,42 @@
-.container{
+ion-content {
+    background-color: #fff; // Use a light background to keep things clean and modern.
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 50%;
-    
-}
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 500px; // Limit the width to ensure it looks good on larger screens.
+    width: 100%;
+    margin: auto;
+  
+    .header {
+      margin-bottom: 2rem; // Space between the logo/title and the buttons.
+  
+      .logo {
+        max-width: 150px; // Adjust the logo size as needed.
+        margin-bottom: 1rem; // Space below the logo.
+      }
+  
+      .custom-title {
+        font-size: 1.75rem; // Large font size for impact.
+        margin-bottom: 1rem; // Space below the title.
+      }
+    }
+  
+    .main-button, .secondary-button {
+      margin-bottom: 1rem; // Space between the buttons.
+      --border-radius: 8px; // Rounded corners for the buttons.
+      --background: #3880ff; // Primary color for the main button.
+      --color: #fff; // Text color for the main button.
+  
+      &:last-child {
+        --background: transparent; // Secondary button has no background color.
+        --color: #3880ff; // Text color for the secondary button.
+        --border: 2px solid #3880ff; // Border color for the secondary button.
+      }
+    }
+  }
+  

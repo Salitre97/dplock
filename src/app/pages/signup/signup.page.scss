@@ -1,39 +1,92 @@
-.input{
-    font-size: 300;
-}
-ion-item{
+.input {
+    font-size: 16px; // Adjusted from 300 to a more standard size, consider using 'rem' for responsiveness
+  }
+  
+  ion-item {
     --background: #f1f1f1;
     border-radius: 10px;
     margin-bottom: 16px;
-}
-.header{
+    --padding-start: 0; // Ensure padding is consistent especially when using floating labels
+    --padding-start: 8px; // Adjust this value as needed
+    --inner-padding-end: 8px;
+    --label-padding-start: 8px
+  }
+  ion-label {
+    padding-left: 8px;
+  }
+  
+  .header {
     margin-top: 100px;
     margin-bottom: 80px;
     text-align: center;
-    .subTitle{
-        color: gray;
-        font-size: 0.9rem;
+  
+    .title, .subTitle { // Ensure the .title is included correctly within .header
+      color: gray; // Assuming you want a uniform color, adjust as needed
     }
-    title{
-        font-size: 2rem;
+  
+    .subTitle {
+      font-size: 0.9rem;
     }
-}
-.signupLink{
+  
+    .title { // Corrected from 'title' to '.title' for class selection
+      font-size: 2rem;
+      color: var(--ion-color-primary, #000); // Default to black if primary color isn't set
+    }
+  }
+  
+  .signupLink { // Make sure the class name matches with your HTML. It was previously ".signinLink"
     display: flex;
-    margin: auto;
-    flex-direction: row;
-    align-content: center;
+    justify-content: center; // Center content horizontally
+    align-items: center; // Center content vertically within the flex container
+    text-align: center; // Ensure text alignment is centered for all child elements
     position: absolute;
-    justify-content: center;
+    bottom: 20px; // Adjust bottom positioning to give some space from the bottom edge
     left: 0;
-    bottom: 0;
-    width: 80%;
     right: 0;
+    margin: auto;
+    width: 100%; // Adjust width to 100% for better responsiveness
+    
+    p {
+      font-size: 0.9rem;
+    }
+    
+    a {
+      text-decoration: none;
+      color: var(--ion-color-primary); // This makes the link color consistent with your theme
+      font-weight: bold;
+    }
+  }
+  
+  .submit-button {
+    font-size: 1rem; // Ensure your button text size is appropriate and readable
+    --background: var(--ion-color-primary); // Use primary color for the button
+    border-radius: 10px; // Match your ion-item border-radius for consistency
+    margin-top: 32px; // Space above the button
+  }
+  .signup-link-top {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 16px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
 
-    p{
-        font-size: 0.9rem;
-    }
-    a{
+  .signin-link {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 16px;
+  
+    .sign-in-text {
+      color: #000;
+      text-decoration: none;
+      font-size: 1rem;
+
+      &:hover {
         text-decoration: none;
+        color: #000;
+      }
     }
-}
+  }

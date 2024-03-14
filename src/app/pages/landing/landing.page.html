@@ -1,14 +1,10 @@
 
 <ion-content [fullscreen]="true">
   <div class="container">
-    <ion-img src="assets/lock.png"/>
-    <ion-title>DPLOCK</ion-title>
+    <ion-img src="assets/Dp_Logo.png" alt="lock.png"></ion-img>
+    <ion-title class="custom-title">Enhanced Security</ion-title>
+    <ion-button [routerLink]="['/login']" expand="block" shape="round">
+      Login
+    </ion-button>
   </div>
-
-  <ion-fab vertical="bottom" horizontal="end" style="margin-bottom:30px">
-    <ion-fab-button [routerLink]="['/login']">
-      <ion-icon name="chevron-forward"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
 </ion-content>
