@@ -16,7 +16,7 @@ Registration:
 1. Require an invitiaion code alongside other registration info name, email, password etc.
 2. Validate code agianst the ones stored in database to check if code is valid and unused.
 3. Code is one-time use only.
-4. # Admin is to provide the one time code.
+4. ***Admin is to provide the one time code.***
 
 WiFi:
 -
