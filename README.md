@@ -1,7 +1,7 @@
 # DPLOCK : Partnered with DP Containers
 
 Developement of web application using Ionic Framework
-----
+--
 To run application run: 
 1. run 'ionic serve'
 2. check requirements.txt for dependenacies.
@@ -18,17 +18,12 @@ Registration:
 3. Code is one-time use only.
 4. ***Admin is to provide the one time code.***
 
-WiFi: will only be used to access content
+Bluetooth:
 -
-1. ESP32 will connect with the web application through WiFi.
-2. list of devices will be shown on web application, where user can select device needed.
+1. Will be used to talk to ESP32 and access data such as: container status, battery life.
+3. list of devices will be shown on web application, where user can select device needed.
    
-
 Security:
--
-1. Each device (ESP32) will have their own api key registered in database.
-2. When a new device added api key is stored in database.
-3. ***Only admin can see api key***
-4. 
+- 
 
 
