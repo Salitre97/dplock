@@ -22,6 +22,12 @@ WiFi:
 -
 1. ESP32 will connect with the web application through WiFi.
 2. list of devices will be shown on web application, where user can select device needed.
-3. 
+
+Security:
+-
+1. Each device (ESP32) will have their own api key registered in database.
+2. When a new device added api key is stored in database.
+3. ***Only admin can see api key***
+4. 
 
 
