@@ -18,10 +18,11 @@ Registration:
 3. Code is one-time use only.
 4. ***Admin is to provide the one time code.***
 
-WiFi:
+WiFi: will only be used to access content
 -
 1. ESP32 will connect with the web application through WiFi.
 2. list of devices will be shown on web application, where user can select device needed.
+   
 
 Security:
 -
