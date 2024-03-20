@@ -24,6 +24,14 @@ Bluetooth:
 3. list of devices will be shown on web application, where user can select device needed.
    
 Security:
-- 
+-
+1.Secure Simple Pairing (SSP)
+2.Role-Based Access Control (RBAC)
+3.
 
+Hardware:
+-
+1. Exterior button to trigger ESP32 to wake up.
+2. If not connected within 15-30 seconds, ESP32 will go back to sleep.
+3. 
 
