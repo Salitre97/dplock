@@ -35,3 +35,7 @@ Hardware:
 2. If not connected within 15-30 seconds, ESP32 will go back to sleep.
 3. 
 
+Power:
+-
+1. ESP32 low power mode: ~ 260 uA (ULP co-processor, I2C, GPIO, RTC & RTC memory)
+2. 
